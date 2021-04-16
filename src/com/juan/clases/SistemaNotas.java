@@ -15,7 +15,7 @@ public class SistemaNotas implements ISistemaNotas{
 
 	public void agregarAlumno(Alumno alumno)
 	{
-		if(!existeAlumno(alumno))
+		if(existeAlumno(alumno))
 		{
 			throw new RuntimeException ("el alumno ya esta ingresado");
 		}

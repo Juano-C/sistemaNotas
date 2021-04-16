@@ -59,13 +59,8 @@ public class Alumno implements IAlumno{
 	{
 		if(estaAprobada(nota))
 		{
-			if(this.materias.contains(nombre))
-				throw new RuntimeException ("la materia ya esta ingresada");
-			else
-			{
-				Materia materia = new Materia(nombre, nota);
-				materias.add(materia);
-			}
+			Materia materia = new Materia(nombre, nota);
+			materias.add(materia);
 		}
 	}
 	
